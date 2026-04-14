@@ -1,17 +1,18 @@
+using M2L_Services.Forms;
+
 namespace M2L_Services
 {
     internal static class Program
     {
         /// <summary>
-        ///  The main entry point for the application.
+        /// Point d'entrée de l'application M2L Services.
+        /// Lance le formulaire de connexion au démarrage.
         /// </summary>
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new FormLogin());
         }
     }
 }
